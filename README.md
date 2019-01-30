@@ -5,6 +5,7 @@ Chrome extension that blocks access to distracting websites
 * Create icon
 * Improve UI for popup
 
-## Functionality
+## Functionality goals:
 * Add feature to allow user to manually add sites to block
 * Move to a whitelist system (all sites blocked unless on whitelist)
+* Pause blocking
