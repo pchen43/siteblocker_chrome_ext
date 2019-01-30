@@ -1,0 +1,51 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Stop going on Social Media!</title>
+    <style type="text/css">
+      body {
+        margin: 50px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      #container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .white_list {
+        margin: 1px;
+        padding: 1px;
+        width: 300px;
+        height: 100px;
+        resize: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Productivity Time</h1>
+    <br></br>  
+    <div id="container">
+        <form id="timer">
+          <span>Set Timer: </span>
+          <input type="number" id="minutes" min="0" step="15">Minutes</input>
+          <input type="submit" value="Start!"></input>
+        </form>
+    </div>
+    
+    <script src="popup.js"></script>
+
+
+  </body>
+</html>

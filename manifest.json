@@ -1,0 +1,31 @@
+{
+  "name": "Productivity Website Blocker",
+  "version": "1.0",
+  "description": "Stops you from going to distracting websites",
+  
+  "browser_action": 
+  {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Start being productive!"
+  },
+
+  
+  "permissions": ["webRequest", "webRequestBlocking",
+                  "*://*.facebook.com/*", 
+				  "*://*.instagram.com/*",
+				  "*://*.reddit.com/*",
+				  "*://*.imgur.com/*",
+				  "*://*.twitter.com/*",
+				  "*://*.tumblr.com/*",
+                  "alarms",
+                  "activeTab",
+                  "tabs"],
+  
+  "background": 
+  {
+    "scripts": ["background.js"]
+  },
+
+  "manifest_version": 2
+}
